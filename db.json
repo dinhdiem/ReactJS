@@ -1,0 +1,61 @@
+{
+  "users": [],
+  "categors": [
+    {
+      "id": 1,
+      "name": "Điện thoại"
+    },
+    {
+      "id": 2,
+      "name": "Laptop"
+    },
+    {
+      "id": 3,
+      "name": "Máy tính bảng"
+    },
+    {
+      "id": 4,
+      "name": "Âm thanh"
+    }
+  ],
+  "phones": [
+    {
+      "id": 1,
+      "name": "Điện thoại",
+      "short_description": "dasbdsabdasdasdjas",
+      "long_description": "dasbdsabdasdasdjas",
+      "originalPrice": 120000000,
+      "saleOffPrice": 10000,
+      "highlights": "Mạnh mẽ, siêu nhanh với chip A14, RAM 6GB, mạng 5G tốc độ cao",
+      "categorId": 1
+    },
+    {
+      "id": 3,
+      "name": "fsfafasfsafsafafasf",
+      "short_description": "dasbdsabdasdasdjas",
+      "long_description": "fsafsafsafsafas",
+      "originalPrice": "132132132132132131",
+      "saleOffPrice": "231321",
+      "highlights": "Mạnh mẽ, siêu nhanh với chip A14, RAM 6GB, mạng 5G tốc độ cao",
+      "categorId": 2
+    },
+    {
+      "name": "sản phẩm đạt chuẩn",
+      "originalPrice": "1231232132131",
+      "saleOffPrice": "321321",
+      "categorId": "1",
+      "Highlights": "vip pro",
+      "long_description": "vip pro",
+      "id": 5
+    },
+    {
+      "name": "BMW S1000RR 2020",
+      "originalPrice": "321321321321",
+      "saleOffPrice": "231",
+      "categorId": "4",
+      "Highlights": "32132132131",
+      "long_description": "321321321",
+      "id": 9
+    }
+  ]
+}
