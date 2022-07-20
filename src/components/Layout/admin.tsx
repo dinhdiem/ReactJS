@@ -27,22 +27,20 @@ const LayoutAdmin = (props: Props) => {
         </div>
       </header>
       <div className="flex">
-        <div className="flex flex-col justify-between h-screen bg-white border-r w-[299px]">
+        <div className="flex flex-col justify-between h-screen bg-white border-r w-[250px]">
           <div className="px-4 py-6">
             <nav className="flex flex-col mt-6 space-y-1">
               <NavLink
                 to="/admin/phone"
-                className="flex items-center px-4 py-2 text-gray-700 bg-[#00B0D7] rounded-lg w-[180px]"
+                className="flex items-center px-4 py-2 text-gray-500 hover:bg-[#00B0D7] hover:text-white  rounded-lg w-[180px]"
               >
-                <div className="text-xl text-white">
+                <div className="text-xl">
                   <BsPhone />
                 </div>
-                <span className="ml-3 text-sm font-medium text-white">
-                  Điện thoại
-                </span>
+                <span className="ml-3 text-sm font-medium">Điện thoại</span>
               </NavLink>
               <a
-                href=""
+                href="/admin/laptop"
                 className="flex items-center px-4 py-2 text-gray-500 rounded-lg hover:bg-[#00B0D7] hover:text-white w-[180px]"
               >
                 <div className="text-xl">
@@ -72,7 +70,7 @@ const LayoutAdmin = (props: Props) => {
             </nav>
           </div>
         </div>
-        <div className="w-[1250px] bg-gray-100">
+        <div className="grow bg-gray-100">
           <Outlet></Outlet>
         </div>
       </div>

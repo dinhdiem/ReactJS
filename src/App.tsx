@@ -15,6 +15,9 @@ import { PhoneType } from "./types/ProductType";
 import { CategorType } from "./types/CategoryType";
 import { listCategors } from "./api/Category";
 import EditPhone from "./components/EditPhone";
+import LaptopList from "./components/Laptop";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const [phone, setPhone] = useState<PhoneType[]>([]);
@@ -23,11 +26,11 @@ function App() {
   useEffect(() => {
     const getAll = async () => {
       const { data } = await listCategors();
-      console.log(data);
       setCategor(data);
     };
     getAll();
   }, []);
+
   useEffect(() => {
     const getAll = async () => {
       const { data } = await listPhone();
@@ -81,8 +84,12 @@ function App() {
               }
             />
           </Route>
+          <Route path="laptop">
+            <Route path="" element={<LaptopList />} />
+          </Route>
         </Route>
       </Routes>
+      <ToastContainer />
     </BrowserRouter>
   );
 }

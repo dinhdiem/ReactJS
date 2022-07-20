@@ -20,7 +20,10 @@
     "react-icons": "^4.4.0",
     "react-number-format": "^4.9.3",
     "react-router-dom": "^6.3.0",
-    "styled-components": "^5.3.5"
+    "react-toastify": "^9.0.7",
+    "reactjs-toastr": "^1.1.0",
+    "styled-components": "^5.3.5",
+    "toastr": "^2.1.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",

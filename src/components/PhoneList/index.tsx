@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import { PhoneType } from "../../types/ProductType";
 import Add from "../../assets/image/Icon.svg";
 import { CategorType } from "../../types/CategoryType";
+import { toast } from "react-toastify";
 
 type PhoneList = {
   phone: PhoneType[];
@@ -14,7 +15,13 @@ type PhoneList = {
 
 const PhoneList = ({ phone, ondelete, categors }: PhoneList) => {
   const handleDelete = (id: number) => {
-    if (window.confirm("Bạn có muốn xóa sản phẩm này không?")) ondelete(id);
+    if (window.confirm("Bạn có muốn xóa sản phẩm này không?")) {
+      ondelete(id);
+      toast.success("Xóa sản phẩm thành công", {
+        autoClose: 3000,
+        pauseOnHover: true,
+      });
+    }
   };
   return (
     <div className="bg-gray-100 mx-auto px-5 pt-8 pr-12">
@@ -60,6 +67,9 @@ const PhoneList = ({ phone, ondelete, categors }: PhoneList) => {
                   Tên sản phẩm
                 </th>
                 <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                  Ảnh sản phẩm
+                </th>
+                <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                   Thành tiền
                 </th>
                 <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
@@ -76,12 +86,15 @@ const PhoneList = ({ phone, ondelete, categors }: PhoneList) => {
             <tbody>
               {phone?.map((item, index) => {
                 return (
-                  <tr key={item.id}>
+                  <tr key={index}>
                     <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                       {index + 1}
                     </td>
                     <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                       {item.name}
+                    </td>
+                    <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                      <img src={item.img} className="w-20 h-14" />
                     </td>
                     <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                       {new Intl.NumberFormat().format(item.originalPrice)} VND
@@ -92,7 +105,7 @@ const PhoneList = ({ phone, ondelete, categors }: PhoneList) => {
                     <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                       {item.name}
                     </td>
-                    <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm flex items-center">
+                    <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm flex h-[97px] items-center ">
                       <NavLink
                         className="text-black mr-1 text-2xl"
                         to={`/admin/phone/${item.id}/edit`}

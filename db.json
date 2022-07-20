@@ -20,42 +20,64 @@
   ],
   "phones": [
     {
-      "id": 1,
-      "name": "Điện thoại",
-      "short_description": "dasbdsabdasdasdjas",
-      "long_description": "dasbdsabdasdasdjas",
-      "originalPrice": 120000000,
-      "saleOffPrice": 10000,
-      "highlights": "Mạnh mẽ, siêu nhanh với chip A14, RAM 6GB, mạng 5G tốc độ cao",
-      "categorId": 1
+      "img": "http://res.cloudinary.com/dv3vzmogk/image/upload/v1658287064/anhhtus/mxm0fuikglilobbahpkp.png",
+      "name": "BMW S1000RR 2020",
+      "originalPrice": "1321321",
+      "saleOffPrice": "12321321",
+      "categorId": "1",
+      "Highlights": "21321321",
+      "long_description": "312321",
+      "id": 3
     },
     {
-      "id": 3,
-      "name": "fsfafasfsafsafafasf",
-      "short_description": "dasbdsabdasdasdjas",
-      "long_description": "fsafsafsafsafas",
-      "originalPrice": "132132132132132131",
-      "saleOffPrice": "231321",
-      "highlights": "Mạnh mẽ, siêu nhanh với chip A14, RAM 6GB, mạng 5G tốc độ cao",
-      "categorId": 2
-    },
-    {
-      "name": "sản phẩm đạt chuẩn",
-      "originalPrice": "1231232132131",
+      "img": "http://res.cloudinary.com/dv3vzmogk/image/upload/v1658288829/anhhtus/xmqm07yrpg55dpdggbur.png",
+      "name": "BMW S1000RR 2020",
+      "originalPrice": "21321",
       "saleOffPrice": "321321",
       "categorId": "1",
-      "Highlights": "vip pro",
-      "long_description": "vip pro",
+      "Highlights": "321321",
+      "long_description": "321321",
       "id": 5
     },
     {
+      "img": "http://res.cloudinary.com/dv3vzmogk/image/upload/v1658288829/anhhtus/xmqm07yrpg55dpdggbur.png",
       "name": "BMW S1000RR 2020",
-      "originalPrice": "321321321321",
-      "saleOffPrice": "231",
+      "originalPrice": "21321",
+      "saleOffPrice": "321321",
+      "categorId": "1",
+      "Highlights": "321321",
+      "long_description": "321321",
+      "id": 6
+    },
+    {
+      "img": "http://res.cloudinary.com/dv3vzmogk/image/upload/v1658289309/anhhtus/smz8gkfb3ljngmmuq6cp.png",
+      "name": "BMW S1000RR 2020",
+      "originalPrice": "1",
+      "saleOffPrice": "1",
+      "categorId": "1",
+      "Highlights": "1",
+      "long_description": "1",
+      "id": 14
+    },
+    {
+      "img": "http://res.cloudinary.com/dv3vzmogk/image/upload/v1658289626/anhhtus/noluenyf1r6hpqcbywzi.png",
+      "name": "BMW S1000RR 2020",
+      "originalPrice": "1",
+      "saleOffPrice": "1",
       "categorId": "4",
-      "Highlights": "32132132131",
-      "long_description": "321321321",
-      "id": 9
+      "Highlights": "1",
+      "long_description": "1",
+      "id": 15
+    },
+    {
+      "img": "http://res.cloudinary.com/dv3vzmogk/image/upload/v1658290087/anhhtus/epjbv7drhoprjhjepsit.png",
+      "name": "1",
+      "originalPrice": "1",
+      "saleOffPrice": "1",
+      "categorId": "1",
+      "Highlights": "ưq",
+      "long_description": "ưq",
+      "id": 16
     }
   ]
 }
